@@ -1,0 +1,409 @@
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+:focus,:active,::before,::after{
+  outline: none;
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+a{
+  color:#111;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+  
+}
+
+/*++++++++++++++++++++++++++++++++ NAV BAR +++++++++++++++++++++++++++++++++++++++++++++*/
+
+nav{
+  display: flex;
+  padding:.7rem;
+}
+
+.branding, .menu{
+  flex:1;
+}
+.branding{
+  padding: 1rem;
+
+  font-weight: 700;
+}
+.menu{
+  margin-left: auto;
+  margin-right: 0;
+}
+.menu ul li{
+  float: right;
+  padding:1rem 2rem;
+
+}
+
+.menu ul li a{
+  font-weight: 700;
+}
+
+.active{
+  border-bottom: 2px solid #007BFF;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++ MAIN +++++++++++++++++++++++++++++++++++++*/
+
+main{
+  display: flex;
+  width: 90%;
+  margin:auto;
+  padding-top: 3rem;
+}
+main section{
+  flex:1;
+}
+main .text article{
+
+width: 30rem;
+
+padding:3rem;
+}
+
+main .text h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 4.5rem;
+}
+main .text p{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+main section img{
+ 
+  width:100%;
+
+  
+}
+
+/*+++++++++++++++++++++++ GENERIC +++++++++++++++++++++*/
+.srv-validation-message{
+  color:red;
+  margin:.5rem;
+  font-size: .7rem;
+}
+.info{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: .7rem;
+  color: #999;
+  margin-top:1rem;
+}
+.button_blue{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 30px;
+  border: 1px solid #007BFF;
+  border-radius: 25px;
+
+}
+.text_blue{
+  color: #007BFF;
+}
+.bg_blue{
+  background-color: #007BFF;
+  color: white;
+}
+.link{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #999;
+}
+.clink{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  margin-top: 2rem;
+}
+.loginlink{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: black;
+}
+.text_white{
+  colot:white !important;
+}
+h3{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 1.7rem;
+}
+p{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++ FORM +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+label{
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .8rem !important
+}
+
+.myForm{
+    display: flex;
+    width:80%;
+    padding-top: 1rem;
+    margin:auto;
+}
+
+.myForm .form{
+  flex:72;
+}
+
+.myForm .sidebar{
+  flex:28;
+}
+
+.myForm .form h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 5rem;
+}
+.form_group{
+    display: flex;
+    padding: 1rem;
+    padding-left: 0;
+}
+.input_group{
+    flex:1;
+   
+}
+input[type='text'],select{
+    width:80%;
+    border: none !important;
+    background-color: #f8f8f8;
+    padding: .9rem 1rem !important;
+    outline: none;
+    margin-top: .5rem !important;
+    color: black !important;
+    font-family:  'Open Sans',serif;
+    font-weight: 700;
+}
+input[type='text']{
+  width:75% !important;
+}
+
+.myForm .sidebar article{
+  padding: 20px;
+  margin: 10px;
+
+}
+.myFrom .sidebar article p{
+ padding: 1rem;
+}
+/* ++++++++++++++++++++ REGISTER ++++++++++++++++++++++++++++*/
+.register{
+  width:85rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+/* ++++++++++++++++++++ LOGIN ++++++++++++++++++++++++++++*/
+.login{
+  display: flex;
+  width:55rem;
+ 
+ 
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  margin: auto;
+  margin-top: 4rem;
+}
+.login section{
+  flex:1
+}
+
+.login h1{
+  font-family: 'Montserrat';
+  font-weight: 900;
+ 
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.login p{
+  ont-family: 'Montserrat';
+  font-weight: 700;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.login .form{
+  padding:4rem 2rem;
+}
+.form_input_group{
+  margin-bottom: 1rem;
+}
+.login_info{
+  background-color: #007BFF;
+  padding:4rem 2rem;
+  color: white;
+  width: 100%;
+}
+/*+++++++++++++++++++++++++++ COLLEGE LIST +++++++++++++++++++*/
+
+.college ul li{
+  display: inline-block;
+  padding: 1rem;
+}
+.college ul{
+  display: flex;
+}
+.college ul .code{
+  flex:0.15
+}
+.college ul .text{
+  flex:0.4
+}
+.college , .filter{
+  padding:1rem 4rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+.chart{
+  height: 200px;
+  width: 80%;
+}
+/* +++++++++++++++++++++++++ UTILITY +++++++++++++++++++++*/
+@media screen and (max-width: 600px) {
+  body {
+
+  }
+  .college ul{
+    display: block;
+  }
+  nav{
+      display: block;
+  }
+  .menu{
+      display: none;
+  }
+  main{
+      display: block;
+      width: 100%;
+      padding-bottom:2rem;
+      padding-top: 0rem;
+      
+      
+ 
+   
+  }
+  .myFrom .form{
+      margin-bottom: 2rem;
+  }
+  .info{
+      margin-bottom: 2rem;
+      font-size: .8rem;
+  }
+  .myForm .form h1{
+      font-family: 'Montserrat';
+      font-weight: 900;
+     
+      font-size: 3rem;
+  }
+  main .text article h1{
+      font-size: 3.5rem;
+  }
+  main .text article a{
+      font-size: 1.2rem;
+
+  }
+  main .text article p{
+      font-size: 1.2rem;
+      padding: 2rem;
+  }
+  main section{
+      text-align: center;
+  }
+  main .text article{
+      text-align: center;
+      width: 100%;
+      padding: 0;
+  }
+
+  .myForm{
+      display:block;
+      width: 100%;
+  }
+
+  .myForm .form{
+      width:90%;
+      margin:auto;
+  }
+  .form_group{
+      display: block;
+      padding-bottom: 0;
+     
+  }
+  .input_group{
+      padding-bottom:1rem;
+  }
+  .myForm .sidebar article{
+      padding:20px;
+      margin: 0;
+  }
+  .myForm .sidebar{
+    
+      text-align: center;
+   
+  }
+
+  .login{
+      display:block;
+      width:100%;
+      box-shadow: none;
+      margin-top: 0;
+
+  }
+  .login .form,.login_info{
+      padding: 0;
+  }
+  .login .form{
+      width: 90%;
+      margin: auto;
+  }
+  .register{
+      display:block;
+      width:100%;
+      box-shadow: none;
+      margin-top: 0;
+  }
+  .register .form{
+      width: 90%;
+      margin: auto;
+  }
+  
+  .login_info{
+      text-align: center;
+  }
+
+}
